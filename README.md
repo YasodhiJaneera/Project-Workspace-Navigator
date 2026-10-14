@@ -1,4 +1,4 @@
-# Project Workspace Navigator Using MCP
+
 
 ## 1. Project Overview
 
