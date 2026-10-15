@@ -1,10 +1,15 @@
-from pathlib import Path
+def main():
+    message_list=[]
 
-PROJECT_ROOT = Path.cwd().resolve()
+project_path=input("Enter the project path")
+print(project_path)
 
 
-def resolve_safe_path(relative_path: str) -> Path:
-    path = (PROJECT_ROOT / relative_path).resolve()
-    if path != PROJECT_ROOT and PROJECT_ROOT not in path.parents:
-        raise ValueError('Path escapes project workspace.')
-    return path
+
+#while True:
+#
+#         print("Starting...")
+
+
+if __name__ == "__main__":
+    main()
