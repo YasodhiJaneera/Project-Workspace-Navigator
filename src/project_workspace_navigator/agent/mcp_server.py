@@ -1,9 +1,11 @@
 from fastmcp import FastMCP
 from pathlib import Path
+import os
 
+PROJECT_ROOT =os.environ["PROJECT_ROOT"]  
 mcp = FastMCP("My MCP Server")
 
-PROJECT_ROOT = Path.cwd().resolve()
+
 
 def resolve_safe_path(relative_path: str) -> Path:
     path = (PROJECT_ROOT / relative_path).resolve()
